@@ -24,14 +24,64 @@
         android:layout_height="500dp">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
+            android:id="@+id/p0"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:padding="20dp"
             app:layout_constraintVertical_bias="0.0"
+            android:alpha="1"
+            app:srcCompat="@drawable/p0" />
+
+        <ImageView
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:padding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:alpha="0"
             app:srcCompat="@drawable/p1" />
+
+        <ImageView
+            android:id="@+id/p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:padding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:alpha="0"
+            app:srcCompat="@drawable/p2" />
+
+        <ImageView
+            android:id="@+id/p3"
+            android:layout_width="383dp"
+            android:layout_height="461dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:padding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:alpha="0"
+            app:srcCompat="@drawable/p3" />
+
+        <ImageView
+            android:id="@+id/p4"
+            android:layout_width="428dp"
+            android:layout_height="461dp"
+            android:padding="20dp"
+            android:alpha="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/p4" />
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <LinearLayout
@@ -44,11 +94,13 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
+            android:background="@color/black"
             app:srcCompat="@android:drawable/ic_media_rew" />
 
         <ImageButton
             android:id="@+id/frwd"
             android:layout_width="150dp"
+            android:background="@color/black"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             app:srcCompat="@android:drawable/ic_media_ff" />
@@ -65,5 +117,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:text="The Taj Hotel" />
+        android:text="Elephanta Caves" />
 </LinearLayout>
