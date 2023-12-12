@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     private var currImg = 0
@@ -40,6 +41,22 @@ class MainActivity : AppCompatActivity() {
         val idImageToShowInt = resources.getIdentifier(idImageToShowString, "id", packageName)
         image = findViewById(idImageToShowInt)
         image.alpha = 1f
+
+        updateTextView2()
     }
+
+    private fun updateTextView2() {
+        val textView2 = findViewById<TextView>(R.id.textView2)
+        val textArray = arrayOf(
+            "Elephanta Caves",
+            "Taj Hotel",
+            "Marine Drive",
+            "Bandra-Worli Sea Link",
+            "Siddhi Vinayak Temple"
+        )
+
+        textView2.text = textArray[currImg]
+    }
+
 
 }
